@@ -10,11 +10,19 @@
   <div>
     <label for="text">
       input:
-      <input type="text" name="text" id="text" placeholder="input here, only 'H' and 'V'" onkeyup="this.value = this.value.replace(/[^HhVv]/g, '');this.value = this.value.toUpperCase();">
+      <input type="text" name="text" id="text" placeholder="example: 'HV'" onkeyup="this.value = this.value.replace(/[^HhVv]/g, '');this.value = this.value.toUpperCase();">
+      (only H and V here)
     </label>
   </div>
   <div>
-    <button id="valBtn">Go</button>
+    <button id="hBtn">H</button>
+    <button id="vBtn">V</button>
+  </div>
+  <div>
+    <span id="userInputText">Hi Christine :)</span>
+  </div>
+  <div>
+    <button id="goBtn">Go</button>
   </div>
   <div>
     <span id="spotA"></span>
