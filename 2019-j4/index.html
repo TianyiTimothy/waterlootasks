@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>J42019</title>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div>
+    <label for="text">
+      input:
+      <input type="text" name="text" id="text" placeholder="input here, only 'H' and 'V'" onkeyup="this.value = this.value.replace(/[^HhVv]/g, '');this.value = this.value.toUpperCase();">
+    </label>
+  </div>
+  <div>
+    <button id="valBtn">Go</button>
+  </div>
+  <div>
+    <span id="spotA"></span>
+    |
+    <span id="spotB"></span>
+  </div>
+  <div>
+    <span id="spotC"></span>
+    |
+    <span id="spotD"></span>
+  </div>
+</body>
+</html>

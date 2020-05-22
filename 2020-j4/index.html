@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>J42020</title>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div>
+    <label for="text">
+      T:
+      <input type="text" name="text" id="text" placeholder="input 'T' here" onkeyup="this.value = this.value.replace(/[^a-zA-Z]/g, '');this.value = this.value.toUpperCase();">
+    </label>
+  </div>
+  <div>
+    <label for="string">
+      S:
+      <input type="text" name="string" id="string" placeholder="input 'S' here" onkeyup="this.value = this.value.replace(/[^a-zA-Z]/g, '');this.value = this.value.toUpperCase();">
+    </label>
+  </div>
+  <div>
+    <button id="valBtn">Validate</button>
+  </div>
+  <div>
+    <span id="output"></span>
+  </div>
+</body>
+</html>
